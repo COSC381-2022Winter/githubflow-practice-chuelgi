@@ -2,11 +2,11 @@
 <h1>Movies</h1>
 <ul>
 {% for movie in movies %}
-    <p>
-        <b>{{ movie['title'] }}</b>: 
+    <h2>
+        {{ movie['title'] }}: 
         <i>{{movie['tagline']}}</i>
        <br><br> 
         {{ movie['overview'] }}
-    </p>
+    </h2>
 {% endfor %}
 </ul>
